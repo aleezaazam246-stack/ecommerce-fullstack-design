@@ -1,20 +1,35 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# 🛍️ Ecommerce Full-Stack Application
 
-# Run and deploy your AI Studio app
+A complete ecommerce website built with React, Node.js, Express, and TailwindCSS.
 
-This contains everything you need to run your app locally.
+## Features
+- 🏠 Home Page with featured products
+- 📦 Product Listing with search and filter
+- 🔍 Product Details page
+- 🛒 Shopping Cart (localStorage)
+- 👑 Admin Panel (CRUD operations)
+- 🤖 AI Shopping Assistant (Gemini API)
+- 📱 Fully Responsive Design
 
-View your app in AI Studio: https://ai.studio/apps/7fa0c153-cd35-42a6-812d-4a3ffd0110cd
+## Tech Stack
+- **Frontend:** React, TypeScript, TailwindCSS, Vite
+- **Backend:** Node.js, Express, TypeScript
+- **Database:** JSON Server (file-based)
+- **AI:** Google Gemini API
 
 ## Run Locally
 
-**Prerequisites:**  Node.js
+### Prerequisites
+- Node.js (v18+)
+- npm or yarn
 
+### Backend Setup
+```bash
+# Install dependencies
+npm install
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+# Create .env file and add GEMINI_API_KEY
+echo GEMINI_API_KEY=your_api_key > .env.local
+
+# Start backend server
+npm run dev
